@@ -10,7 +10,6 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 
 import { Link} from 'react-router-dom';
-import axios from 'axios';
 
 export default class CreateRoomJoinPage extends Component {
   defaultVotes = 2;
@@ -48,12 +47,6 @@ export default class CreateRoomJoinPage extends Component {
       votes_to_skip: this.state.votesToSkip,
       guest_can_pause: guestCanPause,
     };
-  
-    axios.post('/api/create-room/', data)
-      .then(response => {
-        console.log('Success:', response.data);
-        
-      })
   }
   
 
