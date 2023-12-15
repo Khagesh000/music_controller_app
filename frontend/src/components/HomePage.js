@@ -5,6 +5,7 @@ import RoomJoinPage from './RoomJoinPage';
 import CreateRoomJoinPage from './CreateRoomJoinPage';
 import Room from './Room';
 
+
 import mani1Image from '../../static/images/mani1.jpg';
 
 
@@ -42,6 +43,7 @@ export default class HomePage extends Component {
               Create A Room
             </Button>
           </ButtonGroup>
+          
         </Grid>
       </Grid>
     );
@@ -62,6 +64,7 @@ export default class HomePage extends Component {
           <Route path="/room/:roomCode" element={<Room />} />
         </Routes>
       </Router>
+      
     );
   }
 }
