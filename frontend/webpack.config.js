@@ -1,5 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");  //chatgpt
+const webpack = require("webpack");
 
 module.exports = {
     entry: "./src/index.js",
@@ -37,4 +37,12 @@ module.exports = {
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
         }),
     ],
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "./static/frontend"),
+        },
+        compress: true,
+        port: 8080, 
+        open: true,
+    },
 };
