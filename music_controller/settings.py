@@ -114,7 +114,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = '/home/Khagesh000/music_controller_app/frontend/static/'
+STATIC_ROOT = '/home/Khagesh000/music_controller_app/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend', 'static'),
 ]
